@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  justify-content: center; /* Main axis: eje X */
+  align-items: center; /* Cross axis: eje Y */
+  background-color: lightgray;
+}
+
+.principal {
+  display: block;
+}
+
+.title {
+  color: gray;
+  text-align: center;
+}
+
+p {
+  color: gray;
+
+}
+.data {
+  text-align: center;
+  display: grid;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.buttons {
+  margin-right: 2rem;
+  text-align: right;
+}
+
+.message {
+  height: 8rem;
+}
+
+input:hover{
+  background-color: rgb(235, 241, 247);
+}
+
+img {
+  width: 22px;
+  height: 22px;
+}
+button{
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.send:hover {
+  background-color: lightgreen;
+}
+
+.delete:hover{
+  background-color: pink;
+}
