@@ -32,7 +32,7 @@ p {
   color: gray;
 
 }
-.data {
+.data, div {
   text-align: center;
   display: grid;
   margin-left: 2rem;
@@ -40,13 +40,25 @@ p {
 }
 
 .buttons {
-  margin-right: 2rem;
+  position: relative;
+  padding-top: 6rem;
+  padding-left: 75%;
   text-align: right;
+}
+
+input {
+  height: 1.5rem;
 }
 
 .message {
   height: 8rem;
 }
+
+#message::placeholder{
+  position: relative;
+  bottom: 3rem;
+}
+
 
 input:hover{
   background-color: rgb(235, 241, 247);
@@ -67,4 +79,24 @@ button{
 
 .delete:hover{
   background-color: pink;
+}
+
+.alert  {
+  background-color: lightcoral;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.success  {
+  background-color: lightgreen;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+  height: 2rem;
+  padding: 0.5rem;
 }

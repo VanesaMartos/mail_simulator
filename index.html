@@ -6,26 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mail simulator</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <main class="principal">
-      <h1 class="title">Envío de correo electrónico</h1>
+      <h1 class="title">Mail service</h1>
+      <form id="form">
+        <div class="mail">
+          <p>To</p>
+          <input id="email" type="email" placeholder="e-mail adress" />
+        </div>
+        <div class="cc">
+          <p>CC</p>
+          <input id="cc" type="email" placeholder="e-mail adress" />
+        </div>
+        <div class="subject">
+          <p>Subject</p>
+          <input id="subject" type="text" placeholder="subject" />
+        </div>
+        <div class="message">
+          <p>Message</p>
+          <input
+            id="message"
+            type="text"
+            class="message"
+            placeholder="write here your text"
+          />
+        </div>
 
-      <div class="data">
-        <p>Destinatario</p>
-        <input type="email" />
-        <p>Asunto</p>
-        <input type="text" />
-        <p>Mensaje</p>
-        <input type="text" class="message"/>
-      </div>
-
-      <div class="buttons">
-        <button class="send">
-          <img src="images/send.svg" alt="send_icon" />  Enviar</button>
-        <button class="delete">
-          <img src="images/delete.svg" alt="delete_icon" />  Eliminar</button>
+        <div class="buttons">
+          <button class="send" type="submit" disabled>
+            <img src="images/send.svg" alt="send_icon" /> Send
+          </button>
+          <button class="delete" type="reset">
+            <img src="images/delete.svg" alt="delete_icon" /> Delete
+          </button>
+        </div>
+      </form>
+      <div id = "spinner" class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
       </div>
     </main>
   </body>
